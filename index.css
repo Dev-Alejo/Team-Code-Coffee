@@ -198,7 +198,7 @@ body {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
     grid-gap: 2em;
 }
 
@@ -358,6 +358,7 @@ body {
 
     #middle h1 {
         border: 5px solid rgba(48, 145, 255, 0.5);
+        font-size: 3rem;
     }
 
     h2 {
