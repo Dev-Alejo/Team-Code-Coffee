@@ -461,6 +461,72 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.projects__grid {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 2em;
+}
+
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  transition: transform 0.2s linear;
+}
+
+.project-card {
+  padding: .8em;
+  width: 300px;
+  text-align: center;
+  padding: 12px 4px;
+  background-color: rgba(8, 214, 255, 0.173);
+  transition: transform 0.2s linear;
+}
+
+.img-project {
+  width: 260px;
+  height: 148px;
+  background: url(../img/portfolio/contador.PNG) center no-repeat;
+  background-size: contain;
+  border-radius: 10%;
+  border: 4px solid rgba(48, 145, 255, 0.8);
+}
+
+.link {
+    color: rgb(48, 145, 255);
+    padding: 0 0 0.5em 0;
+    position: relative;
+    margin: 0 16px;
+}
+
+.link:hover {
+    color: rgb(48, 145, 255);
+}
+
+.link::before {
+    content: "";
+    display: inline;
+    width: 0%;
+    height: 0.2em;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(48, 145, 255);
+    transition: width 0.2s ease-in;
+}
+
+.link:hover::before,
+.link:focus::before {
+    width: 100%;
+}
+
+
+.link--icon {
+    color: rgb(48, 145, 255);
+    font-size: 1.4rem;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
